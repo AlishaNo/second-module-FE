@@ -1,0 +1,310 @@
+@font-face {
+    font-family: 'Gotham Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/gotham-book-2.otf") format('opentype');
+}
+@font-face {
+    font-family: 'Gotham Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/GothamMedium.woff") format('woff');
+}
+@font-face {
+    font-family: 'Gotham Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/GothamBold.woff") format('woff');
+}
+body {
+    margin: 0;
+    font-family: "Gotham Book", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #ffffff;
+}
+body * {box-sizing: border-box}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+h1, h3, h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Gotham Medium", sans-serif;
+}
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-family: "Gotham Bold", sans-serif;
+    padding-bottom: 35px;
+}
+h3 {
+    font-size: 44px;
+    padding-bottom: 80px;
+    font-weight: 400;
+    line-height: 60px;
+}
+h3:before {
+    border-top: 1px solid #2c4058;
+}
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+header {
+    background: url("../images/header-bg.jpg") no-repeat 0 0;
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 57px;
+    text-align: center;
+    text-transform: uppercase;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-menu {
+    list-style: circle;
+}
+.main-menu li {
+    float: left;
+    margin: 0 10px 0 70px;
+    font-size: 14px;
+}
+
+.main-menu li:hover {
+    list-style: disc;
+}
+
+a.circle-style {
+    display: inline-flex;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+}
+a.circle-style:hover {
+    background: #2c4058;
+    opacity: 0.5;
+}
+a.circle-style img {
+    width: 13px;
+    height: 13px;
+    margin: auto;
+}
+.headline {
+    padding-top: 20%;
+}
+.headline span {
+    letter-spacing: 0.3em;
+    font-weight: 300;
+}
+a.scroll-to img {
+    height: 7px;
+}
+a.scroll-to {
+    position: absolute;
+    bottom: 10%;
+    margin-left: 0;
+}
+.news {
+    background: url("../images/news-bg.jpg");
+    padding: 140px 0 150px;
+}
+.news h3 {
+    text-align: center;
+    padding-top: 39px;
+}
+.slick-prev:before {
+    content: "\2039";
+    color: #ffffff;
+    font-size: 28px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: absolute;
+    right: -9px;
+}
+
+.slick-next:before {
+    content: "\203A";
+    color: #ffffff;
+    font-size: 28px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    position: absolute;
+}
+.slick-dots li button:before {
+    color: #ffffff;
+    margin-top: 45px;
+}
+.slick-dots li.slick-active button:before {
+    color: #ffffff;
+}
+.news-slider {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+
+}
+.slider-content {
+    color: #2c4058;
+    background-color: #ffffff;
+    min-width: 370px;
+    margin-left: 20px;
+}
+.slider-content .text-area {
+    padding: 30px 20px;
+}
+.slider-content img.icon {
+    float: left;
+}
+.slider-content span {
+    text-transform: uppercase;
+    line-height: 22px;
+    margin-left: 20px;
+}
+.text-area p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 18px 0 32px 0;
+    line-height: 30px;
+    color: #4b5562;
+}
+.text-area h4 {
+    font-family: "Gotham Bold", sans-serif;
+    font-size: 22px;
+    line-height: 34px;
+}
+time  {
+    color: #55b7ff;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 20px;
+}
+.gallery {
+    padding: 140px 0;
+    background-color: #ffffff;
+    color: #2c4058;
+    text-align: center;
+}
+.gallery h3  {
+    padding-top: 39px;
+}
+.gallery-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.gallery-container .col-2 {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.gallery-container .row-1 img:first-child,
+.gallery-container .row-2 img:first-child {
+    margin-right: 5px;
+}
+button.btn-style {
+    border: 1px solid #2c4058;
+    padding: 15px 55px;
+    text-transform: uppercase;
+    transition: 0.7s;
+    font-weight: 300;
+    font-size: 14px;
+}
+button.btn-style:hover {
+    background-color: #2c4058;
+    opacity: 0.5;
+}
+.google-map {
+    height: 700px;
+}
+footer {
+    background: url("../images/footer-bg.jpg");
+    position: relative;
+    height: 525px;
+    padding-top: 150px;
+}
+.logo-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 0 40px 0;
+}
+footer .wrapper {
+    max-width: 770px;
+}
+.form-container {
+    background: #ffffff url("../images/form-bg.jpg") no-repeat 100% 100%;
+    max-width: 770px;
+    padding: 60px 60px 75px 60px;
+    position: absolute;
+    top: -60%;
+    height: 450px;
+    color: #2c4058;
+}
+.form-container h3 {
+    text-align: center;
+    line-height: 54px;
+    padding: 44px 0 35px 0;
+}
+.form-container:after {
+content: "";
+display: table;
+clear: both;
+}
+.form {
+    display: flex;
+}
+.form form {
+    margin-left: 45px;
+}
+.contacts-info {
+    min-width: 305px;
+}
+.contacts-info p {
+    padding-bottom: 40px;
+    margin: 0;
+}
+.contacts-info p:last-child {
+    padding-bottom: 0;
+}
+.form-container input {
+    font-size: 18px;
+    padding: 20px 0;
+    margin-bottom: 28px;
+    outline: none;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #abb0b6;
+}
+.form-container input::placeholder {
+    color: #abb0b6;
+}
+.form-container input:focus {
+    border-bottom: 1px solid #2c4058;
+}
+.form-container input:first-child {
+    padding-top: 0;
+}
+.form-container button {
+    margin-right: auto;
+    margin-left: 150px;
+}
+footer span {
+    font-weight: 300;
+}
